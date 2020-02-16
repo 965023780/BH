@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#0000FFFF"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardPreventCornerOverlap="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" >
+
+        <com.example.bihu.MyCircleImageView
+            android:id="@+id/item_user_picture"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/usersrcl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_username"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="嘤嘤的哈士奇"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            app:layout_constraintStart_toEndOf="@id/item_user_picture"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginStart="10dp"
+            android:text="15小时前·回答了问题"
+            android:textColor="#B6B2B2"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@id/item_user_picture"
+            app:layout_constraintTop_toBottomOf="@+id/item_username" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:text="评价洛谷新春故事会2020"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_time" />
+
+        <TextView
+            android:id="@+id/item_content"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="3"
+            android:singleLine="false"
+            android:text="刷到这里的朋友，别划了，相信我，相信我测试像我新测试像我西镇就这样被红红火火恍恍惚惚哈哈哈测试测测试测试测试测试测试"
+            android:textColor="#000000"
+            android:textSize="11.5dp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_title" />
+
+        <TextView
+            android:id="@+id/item_like_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="6.5dp"
+            android:text="14"
+            android:textColor="#B6B2B2"
+            android:textSize="13dp"
+            app:layout_constraintStart_toEndOf="@+id/item_like"
+            app:layout_constraintTop_toBottomOf="@+id/item_content" />
+
+        <TextView
+            android:id="@+id/item_naive_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="6.5dp"
+            android:text="3"
+            android:textColor="#B6B2B2"
+            android:textSize="13dp"
+            app:layout_constraintStart_toEndOf="@+id/item_naive"
+            app:layout_constraintTop_toBottomOf="@+id/item_content" />
+
+        <ImageView
+            android:id="@+id/item_picture"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/item_content"
+            app:layout_constraintBottom_toTopOf="@+id/item_eli"/>
+
+        <ImageButton
+            android:id="@+id/item_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/like"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_content" />
+
+        <ImageButton
+            android:id="@+id/item_eli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/elic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_content" />
+
+        <ImageButton
+            android:id="@+id/item_naive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/naive"
+            app:layout_constraintStart_toStartOf="@+id/item_like_number"
+            app:layout_constraintTop_toBottomOf="@+id/item_content" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
