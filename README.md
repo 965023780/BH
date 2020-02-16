@@ -37,8 +37,8 @@
 ●我想知道怎么能让APP不那么卡
 
 ## Gif展示
-[view][https://github.com/965023780/BH/blob/master/Demo%20(1).gif]
-[view][https://github.com/965023780/BH/blob/master/Demo%20(2).gif]
-[view][https://github.com/965023780/BH/blob/master/Demo%20(3).gif]
-[view][https://github.com/965023780/BH/blob/master/Demo%20(4).gif]
+![**View**](https://github.com/965023780/BH/blob/master/Demo%20(1).gif)
+![**View**](https://github.com/965023780/BH/blob/master/Demo%20(2).gif)
+![**View**](https://github.com/965023780/BH/blob/master/Demo%20(3).gif)
+![**View**](https://github.com/965023780/BH/blob/master/Demo%20(4).gif)
 
