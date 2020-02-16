@@ -6,9 +6,9 @@
 
 ## 功能
 ●登录/注册/修改密码  
-●修改头像（图片保存在本地）
-●加载问题/答案
-●认同/不认同 问题和答案
+●修改头像（图片保存在本地）  
+●加载问题/答案  
+●认同/不认同 问题和答案  
 ●总之API里除了采纳以外都实现了
 
 ## 技术栈\知识点
@@ -21,7 +21,7 @@
 ●主线路没优化，卡  
 ●RecyclerView数据没有提前缓存，卡  
 ●ImageLoader加载图片，卡  
-●我放弃把图片上传给我的服务器，头像是本地保存的。
+●我放弃把图片上传给我的服务器，头像是本地保存的  
 ●UI界面太简单了  
 ●代码命名有些不规范没改  
 ●代码部分混乱  
@@ -36,4 +36,9 @@
 ●Intent真是神奇，每每查回调、跳转都能看到它  
 ●我想知道怎么能让APP不那么卡
 
-## Gif展示（暂无，还在处理）
+## Gif展示
+[view][https://github.com/965023780/BH/blob/master/Demo%20(1).gif]
+[view][https://github.com/965023780/BH/blob/master/Demo%20(2).gif]
+[view][https://github.com/965023780/BH/blob/master/Demo%20(3).gif]
+[view][https://github.com/965023780/BH/blob/master/Demo%20(4).gif]
+
